@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     // 用于网站分析的内容
     analytics: null,
-    baseUrl: "chuenwei0129.github.io/blog",
+    baseUrl: "chuenwei0129.github.io",
     // Quartz 在 content 文件夹中查找文件时应忽略且不搜索的 glob 模式列表。
     ignorePatterns: ["private", "templates"],
     theme: {
