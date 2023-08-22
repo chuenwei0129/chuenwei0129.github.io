@@ -64,6 +64,7 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
 }
 
 const encoder = (str: string) => str.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/)
+
 let prevShortcutHandler: ((e: HTMLElementEventMap["keydown"]) => void) | undefined = undefined
 document.addEventListener("nav", async (e: unknown) => {
   const currentSlug = (e as CustomEventMap["nav"]).detail.url

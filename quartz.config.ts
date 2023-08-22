@@ -3,19 +3,26 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    // 网站的标题。为您的站点生成 RSS 源时也会使用此功能。
+    pageTitle: "👾 Chu's Blog",
+    // 是否在您的站点上启用 SPA 路由。
     enableSPA: true,
+    // 是否在您的网站上启用 popover previews。
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    baseUrl: "quartz.jzhao.xyz",
+    // 用于网站分析的内容
+    analytics: null,
+    baseUrl: "chuenwei0129.github.io/blog",
+    // Quartz 在 content 文件夹中查找文件时应忽略且不搜索的 glob 模式列表。
     ignorePatterns: ["private", "templates"],
     theme: {
+      // 使用什么字体。Google Fonts 上提供的任何字体都可以在这里使用。
       typography: {
-        header: "Schibsted Grotesk",
+        // 用于标题的字体
+        header: "Fira Code",
+        // 一切字体
         body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        // 内联和块引号的字体。
+        code: "Fira Code",
       },
       colors: {
         lightMode: {
