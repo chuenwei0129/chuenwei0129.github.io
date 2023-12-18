@@ -4,7 +4,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     // 网站的标题。为您的站点生成 RSS 源时也会使用此功能。
-    pageTitle: "👾 Chu's Blog",
+    pageTitle: "<Chu's Blog />",
     // 是否在您的站点上启用 SPA 路由。
     enableSPA: true,
     // 是否在您的网站上启用 popover previews。
@@ -18,9 +18,9 @@ const config: QuartzConfig = {
       // 使用什么字体。Google Fonts 上提供的任何字体都可以在这里使用。
       typography: {
         // 用于标题的字体
-        header: "Fira Code",
+        header: "Noto Serif",
         // 一切字体
-        body: "Source Sans Pro",
+        body: "Noto Serif",
         // 内联和块引号的字体。
         code: "Fira Code",
       },
