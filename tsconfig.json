@@ -1,20 +1,16 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "DOM", "DOM.Iterable"],
-    "experimentalDecorators": true,
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "node",
     "strict": true,
-    "incremental": true,
-    "resolveJsonModule": true,
+    "declaration": true,
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "naifu": ["src"],
+      "naifu/*": ["src/*", "*"]
+    }
   },
-  "include": ["**/*.ts", "**/*.tsx", "./package.json"],
-  "exclude": ["build/**/*.d.ts"]
+  "include": [".dumirc.ts", "global.d.ts", "src/**/*", "code/**/*"]
 }
